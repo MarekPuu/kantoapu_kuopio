@@ -29,7 +29,7 @@ const MeidanTarinaForm = () => {
   };
 
   return (
-    <form action="">
+    <form id="form" action="">
       <div className={classes.formContainer}>
         <div className={classes.TitleContainer}>
           <h1>Pyydä tarjous!</h1>
