@@ -1,0 +1,15 @@
+.InputContainer {
+  width: 100%;
+  margin: auto;
+  label {
+    display: block;
+    padding: 5px 0;
+  }
+  input {
+    width: 100%;
+    font-family: inherit;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid #e5e5e5;
+  }
+}

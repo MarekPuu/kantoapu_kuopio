@@ -1,0 +1,61 @@
+.formContainer {
+  max-width: 600px;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: -20%;
+  box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.2);
+}
+.TitleContainer {
+  text-align: center;
+}
+.input_90 {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.input_45 {
+  width: 45%;
+}
+.input_60 {
+  width: 54%;
+}
+.formInfo {
+  p {
+    padding: 20px 0;
+    padding-bottom: 0;
+    width: 90%;
+    margin: auto;
+    font-weight: 600;
+  }
+}
+.checkboxContainer {
+  display: block;
+  padding-left: 3px;
+  margin-top: 10px;
+
+  :not(:first-child) {
+    margin-left: 10px;
+  }
+  a {
+    color: blue;
+  }
+}
+
+.button {
+  button {
+    color: white;
+    background: black;
+    width: 100%;
+    padding: 15px 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+}
+.margin_10 {
+  margin-top: 20px;
+}

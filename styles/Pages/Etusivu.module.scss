@@ -1,0 +1,26 @@
+.width_80 {
+  width: 80%;
+  max-width: 1820px;
+  margin: auto;
+}
+.MeidanTarinaJaForm {
+  display: flex;
+  //   background-color: antiquewhite;
+  justify-content: space-between;
+  .child_50 {
+    width: 50%;
+  }
+}
+.TitleContainer {
+  text-align: center;
+  h1 {
+    margin: 20px 0;
+    font-weight: 600;
+  }
+}
+
+.AsunnonKokoJaKerros {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}

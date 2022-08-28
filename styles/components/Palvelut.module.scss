@@ -1,0 +1,82 @@
+@use '../variables/Variables.scss' as variable;
+
+.palvelutContainer {
+  padding: 100px 0;
+  width: 100%;
+  // margin: 100px 0;
+}
+.PalvelutContainerTitle {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  span {
+    color: variable.$secondaryFontColor;
+  }
+}
+
+.PalvelutCardContainer {
+  margin: auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 30px;
+  width: fit-content;
+}
+.PalveluCard {
+  cursor: pointer;
+  background-color: white;
+  height: 350px;
+  width: 325px;
+  box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.2);
+  border-bottom: 0px solid black;
+  transition: all 0.1s linear;
+  border-radius: 5px;
+}
+.PalveluCardTitleContainer {
+  background: black;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  h1 {
+    margin-left: 5%;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: white;
+  }
+}
+.PalveluCardTextContainer {
+  padding: 20px 30px;
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+.hover1:hover {
+  transform: translateY(-5px);
+  border: 1px solid variable.$hoverBorderColor1;
+  border-bottom: 8px solid variable.$hoverBorderColor1;
+  .PalveluCardTitleContainer {
+    border-bottom: 1px solid variable.$hoverBorderColor1;
+  }
+}
+.hover2:hover {
+  transform: translateY(-5px);
+  border: 1px solid variable.$hoverBorderColor2;
+  border-bottom: 8px solid variable.$hoverBorderColor2;
+  .PalveluCardTitleContainer {
+    border-bottom: 1px solid variable.$hoverBorderColor2;
+  }
+}
+.hover3:hover {
+  transform: translateY(-5px);
+  border: 1px solid variable.$hoverBorderColor3;
+  border-bottom: 8px solid variable.$hoverBorderColor3;
+  .PalveluCardTitleContainer {
+    border-bottom: 1px solid variable.$hoverBorderColor3;
+  }
+}

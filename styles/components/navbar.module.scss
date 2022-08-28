@@ -1,0 +1,143 @@
+@use '../variables/Variables.scss';
+.button {
+  button {
+    color: white;
+    text-align: left;
+  }
+}
+
+.NavBarContainer {
+  width: 100%;
+  height: 120px;
+  background: Variables.$mainColor;
+  color: Variables.$mainFontColor;
+}
+.NavBarContent {
+  width: 95%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.NavBarLogoContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  img {
+    height: 72px;
+  }
+}
+.NavBarLinksContainer {
+  display: flex;
+}
+.NavInfoLinkContainer {
+  margin-left: 30px;
+  //   min-width: 250px;
+  display: flex;
+  align-items: center;
+  .NavInfoLinkContainerInfo {
+    margin-left: 10px;
+    .title p {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+    .info p {
+      font-size: 0.85rem;
+    }
+  }
+}
+.NavInfoLinkContainerLogo {
+  display: flex;
+  justify-content: center;
+}
+
+.NavBarFlagContainer {
+  margin-left: 50px;
+  img {
+    width: 40px;
+  }
+}
+.select {
+  select {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+.value_finland {
+  background-image: url('../../assets/emojione_flag-for-finland.png');
+}
+
+.LowerNavContainer {
+  height: 60px;
+  color: white;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: white;
+}
+
+.LowerNavLinks {
+  color: black;
+  height: 100%;
+
+  ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    width: max(50%, 800px);
+    align-items: center;
+    margin: auto;
+    li {
+      font-size: 1rem;
+      font-weight: 500;
+      list-style: none;
+    }
+    a {
+      background-image: linear-gradient(
+        to right,
+        Variables.$secondaryFontColor,
+        Variables.$secondaryFontColor 50%,
+        #000 50%
+      );
+      background-size: 200% 100%;
+      background-position: -100%;
+      display: inline-block;
+      padding: 5px 0;
+      position: relative;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.3s ease-in-out;
+    }
+
+    a:before {
+      content: '';
+      background: Variables.$secondaryFontColor;
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    a:hover {
+      background-position: 0;
+    }
+
+    a:hover::before {
+      width: 100%;
+    }
+  }
+}

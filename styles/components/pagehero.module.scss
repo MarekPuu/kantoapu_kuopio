@@ -1,0 +1,31 @@
+@use '../variables/Variables.scss' as variable;
+
+.pageheroContainer {
+  height: calc(100vh - 250px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/KantoapuHero.jpg');
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  background-attachment: fixed;
+
+  .textContainer {
+    max-width: 1820px;
+    width: 90%;
+    margin: auto;
+  }
+  h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  span {
+    color: variable.$secondaryFontColor;
+  }
+}
