@@ -1,16 +1,14 @@
 import React from 'react';
 import NavBar from '../nav/NavBar';
-import Head from 'next/head';
 import GoogleAnalytics from '../google-analytics';
 import useGoogleAnalytics from '../../hooks/useGoogleAnalytics';
+import Head from './CustomHead';
 
 const PageLayout = ({ children }: any) => {
   useGoogleAnalytics();
   return (
     <>
-      <Head>
-        <title>Kantoapu Kuopio</title>
-      </Head>
+      <Head />
       <GoogleAnalytics />
       <NavBar />
       {children}
