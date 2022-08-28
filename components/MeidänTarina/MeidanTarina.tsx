@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import classes from '../../styles/components/MeidanTarina.module.scss';
 
@@ -27,7 +28,14 @@ const MeidanTarina = () => {
         <p>Ota yhteyttä ja suunnitellaan juuri sinulle sopiva muutto!</p>
       </div>
       <div className={classes.MeidanTarinaImage}>
-        {/* <img src={image} alt="Kantoapu" /> */}
+        <Image
+          width={500}
+          height={500}
+          src={'/groupPhoto.jpg'}
+          alt="Kantoapu"
+          layout="responsive"
+          objectFit="contain"
+        />
       </div>
     </div>
   );

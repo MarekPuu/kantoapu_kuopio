@@ -72,14 +72,16 @@ const NavBar = () => {
                       alt="form"
                     />
                   </div>
-                  <div className={classes.NavInfoLinkContainerInfo}>
-                    <div className={classes.title}>
-                      <p>Pyydä tarjous</p>
+                  <Link href={{ pathname: '/', hash: '#form' }}>
+                    <div className={classes.NavInfoLinkContainerInfo}>
+                      <div className={classes.title}>
+                        <p>Pyydä tarjous</p>
+                      </div>
+                      <div className={classes.info}>
+                        <p>Siirry Lomakkeeseen</p>
+                      </div>
                     </div>
-                    <div className={classes.info}>
-                      <p>Siirry Lomakkeeseen</p>
-                    </div>
-                  </div>
+                  </Link>
                 </div>
               </button>
             </div>
