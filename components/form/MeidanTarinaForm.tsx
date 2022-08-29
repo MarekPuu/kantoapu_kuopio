@@ -65,6 +65,8 @@ const MeidanTarinaForm = () => {
         </div>
         <div className={`${classes.input_90} ${classes.checkboxContainer}`}>
           <input
+            id="checkboxL"
+            name="checkboxL"
             type="checkbox"
             onChange={(e) => handleCheckBoxCheck(e, 'lOnHissi')}
           />
@@ -101,6 +103,8 @@ const MeidanTarinaForm = () => {
         </div>
         <div className={`${classes.input_90} ${classes.checkboxContainer}`}>
           <input
+            id="checkboxM"
+            name="checkboxM"
             type="checkbox"
             onChange={(e) => handleCheckBoxCheck(e, 'mOnHissi')}
           />
@@ -119,15 +123,19 @@ const MeidanTarinaForm = () => {
         </div>
         <div className={classes.input_90}>
           <div className="textareaContainer">
-            <label htmlFor="">Viesti</label>
+            <label htmlFor="textareaEtusivu">Viesti</label>
             <textarea
               onChange={(e) => setViesti(e.target.value)}
               value={viesti}
+              id="textareaEtusivu"
+              name="textareaEtusivu"
             />
           </div>
         </div>
         <div className={`${classes.input_90} ${classes.checkboxContainer}`}>
           <input
+            id="checkbox"
+            name="checkbox"
             type="checkbox"
             onChange={(e) => handleCheckBoxCheck(e, 'sopimusehdot')}
           />
