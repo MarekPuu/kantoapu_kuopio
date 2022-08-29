@@ -4,7 +4,9 @@ import PageHero from '../components/PageHero/PageHero';
 import MeidanTarina from '../components/MeidänTarina/MeidanTarina';
 import MeidanTarinaForm from '../components/form/MeidanTarinaForm';
 import PalvelutContainer from '../components/Palvelut/PalvelutContainer';
+import PyydaTarjous from '../components/PyydaTarjous';
 import HinnastoContainer from '../components/Hinnasto/HinnastoContainer';
+
 const Home: NextPage = () => {
   return (
     <>
@@ -25,6 +27,7 @@ const Home: NextPage = () => {
           <HinnastoContainer />
         </div>
       </div>
+      <PyydaTarjous />
     </>
   );
 };

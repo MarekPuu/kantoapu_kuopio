@@ -1,0 +1,96 @@
+@use '../variables/Variables.scss';
+
+.FooterContainer {
+  min-height: 400px;
+  width: 100%;
+  background: black;
+  color: white;
+  p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    list-style: none;
+  }
+  h1 {
+    width: fit-content;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      height: 2px;
+      background-color: white;
+      bottom: -15px;
+      left: 0;
+      width: 70%;
+    }
+  }
+}
+.FooterContent {
+  max-width: 1820px;
+  width: 90%;
+  margin: auto;
+  height: 100%;
+}
+.FooterUpperContent {
+  height: 50px;
+  background: Variables.$secondaryFontColor;
+  .Content {
+    max-width: 1820px;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      margin-left: 10px;
+    }
+  }
+}
+
+.FooterLowerContent {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+.FooterLowerContent {
+  padding: 50px 0;
+}
+
+.FooterLinks {
+  color: white;
+  height: 100%;
+
+  ul {
+    height: 100%;
+    margin: auto;
+    li {
+      margin-bottom: 20px;
+      font-size: 1rem;
+      font-weight: 500;
+      list-style: none;
+    }
+  }
+}
+.Links {
+  display: flex;
+  justify-content: space-between;
+}
+.padding {
+  padding-left: 100px;
+}
+.FooterContanct {
+  p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    list-style: none;
+  }
+}

@@ -12,12 +12,14 @@ const CustomHead = () => {
 
   const path =
     router.pathname === '/'
-      ? ''
-      : `| ${capitalizeFirstLetter(router.pathname.replace('/', ''))}`;
+      ? 'Kantoapu Kuopio'
+      : `Kantoapu Kuopio | ${capitalizeFirstLetter(
+          router.pathname.replace('/', '')
+        )}`;
 
   return (
     <Head>
-      <title>{`Kantoapu Kuopio ${path}`}</title>
+      <title>{path}</title>
     </Head>
   );
 };

@@ -60,12 +60,14 @@
   transform: translateY(-5px);
   border: 1px solid variable.$hoverBorderColor1;
   border-bottom: 8px solid variable.$hoverBorderColor1;
+  box-shadow: none;
   .PalveluCardTitleContainer {
     border-bottom: 1px solid variable.$hoverBorderColor1;
   }
 }
 .hover2:hover {
   transform: translateY(-5px);
+  box-shadow: none;
   border: 1px solid variable.$hoverBorderColor2;
   border-bottom: 8px solid variable.$hoverBorderColor2;
   .PalveluCardTitleContainer {
@@ -74,6 +76,7 @@
 }
 .hover3:hover {
   transform: translateY(-5px);
+  box-shadow: none;
   border: 1px solid variable.$hoverBorderColor3;
   border-bottom: 8px solid variable.$hoverBorderColor3;
   .PalveluCardTitleContainer {

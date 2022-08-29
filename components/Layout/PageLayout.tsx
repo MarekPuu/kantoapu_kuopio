@@ -3,6 +3,7 @@ import NavBar from '../nav/NavBar';
 import GoogleAnalytics from '../google-analytics';
 import useGoogleAnalytics from '../../hooks/useGoogleAnalytics';
 import Head from './CustomHead';
+import Footer from '../Footer/Footer';
 
 const PageLayout = ({ children }: any) => {
   useGoogleAnalytics();
@@ -12,6 +13,7 @@ const PageLayout = ({ children }: any) => {
       <GoogleAnalytics />
       <NavBar />
       {children}
+      <Footer />
     </>
   );
 };
