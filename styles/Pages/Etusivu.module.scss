@@ -5,10 +5,13 @@
 }
 .MeidanTarinaJaForm {
   display: flex;
+  flex-wrap: wrap-reverse;
   //   background-color: antiquewhite;
   justify-content: space-between;
+  margin: auto;
   .child_50 {
-    width: 50%;
+    width: 45%;
+    min-width: 300px;
   }
 }
 .TitleContainer {
@@ -23,4 +26,33 @@
   display: flex;
   width: 90%;
   margin: auto;
+}
+@media screen and (max-width: 950px) {
+  .width_80 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .MeidanTarinaJaForm {
+    margin: auto;
+    .child_50 {
+      width: 90%;
+      min-width: 300px;
+      margin: auto;
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  .width_80 {
+    width: 100%;
+  }
+  .MeidanTarinaJaForm {
+    width: 100%;
+    margin: auto;
+    .child_50 {
+      width: 95%;
+      min-width: 300px;
+      margin: auto;
+    }
+  }
 }

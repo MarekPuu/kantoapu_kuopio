@@ -22,10 +22,12 @@
   margin: auto;
   margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 325px);
   grid-template-rows: auto;
   gap: 30px;
-  width: fit-content;
+  max-width: 1035px;
+  width: 90%;
 }
 .PalveluCard {
   cursor: pointer;
