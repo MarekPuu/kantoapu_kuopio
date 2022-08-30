@@ -22,14 +22,14 @@ const Footer = () => {
               rel="noreferrer"
               href="https://www.facebook.com/profile.php?id=100076212821703"
             >
-              <FaFacebookSquare size={25} color="white" />
+              <FaFacebookSquare size={25} color="#1773EA" />
             </a>
             <a
               target="_blank"
               rel="noreferrer"
               href="https://www.instagram.com/kantoapukuopio"
             >
-              <GrInstagram size={25} color="white" />
+              <GrInstagram size={25} color="#8009F7" />
             </a>
           </div>
         </div>
@@ -59,70 +59,80 @@ const Footer = () => {
           <div className={classes.FooterLinks}>
             <h1>Hyödylliset linkit</h1>
             <div className={classes.Links}>
-              <ul>
-                <li>
-                  <Link href={{ pathname: '/', hash: 'palvelut' }}>
-                    Palvelut
-                  </Link>
-                </li>
-                <li>
-                  <Link href={{ pathname: '/', hash: 'hinnasto' }}>
-                    Hinnasto
-                  </Link>
-                </li>
-                <li>
-                  <Link href={{ pathname: '/yrityksille' }}>Yrityksille</Link>
-                </li>
-                <li>
-                  <Link href={{ pathname: '/toimipisteemme' }}>
-                    Toimipisteemme
-                  </Link>
-                </li>
-              </ul>
-              <ul className={classes.padding}>
-                <li>
-                  <Link href={{ pathname: '/', hash: 'palvelut' }}>
-                    Palvelut
-                  </Link>
-                </li>
-                <li>
-                  <Link href={{ pathname: '/', hash: 'hinnasto' }}>
-                    Hinnasto
-                  </Link>
-                </li>
-                <li>
-                  <Link href={{ pathname: '/yrityksille' }}>Yrityksille</Link>
-                </li>
-                <li>
-                  <Link href={{ pathname: '/toimipisteemme' }}>
-                    Toimipisteemme
-                  </Link>
-                </li>
-              </ul>
+              <div>
+                <ul>
+                  <li>
+                    <Link href={{ pathname: '/', hash: 'palvelut' }}>
+                      Palvelut
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={{ pathname: '/', hash: 'hinnasto' }}>
+                      Hinnasto
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={{ pathname: '/yrityksille' }}>Yrityksille</Link>
+                  </li>
+                  <li>
+                    <Link href={{ pathname: '/toimipisteemme' }}>
+                      Toimipisteemme
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>
+                    <Link href={{ pathname: '/', hash: 'palvelut' }}>
+                      Palvelut
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={{ pathname: '/', hash: 'hinnasto' }}>
+                      Hinnasto
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={{ pathname: '/yrityksille' }}>Yrityksille</Link>
+                  </li>
+                  <li>
+                    <Link href={{ pathname: '/toimipisteemme' }}>
+                      Toimipisteemme
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div className={classes.FooterContanct}>
-            <h1>Yhteystiedot</h1>
-            <p>
-              <ImHome style={{ marginRight: '10px' }} size={15} color="white" />
-              Rinnekatu 2-4b, 70600 Kuopio
-            </p>
-            <p>
-              <GiRotaryPhone
-                style={{ marginRight: '10px' }}
-                size={15}
-                color="white"
-              />
-              044 238 8271
-            </p>
-            <p>
-              <MdEmail
-                style={{ marginRight: '10px' }}
-                size={15}
-                color="white"
-              />
-              info@kantoapukuopio.fi
-            </p>
+            <div>
+              <h1>Yhteystiedot</h1>
+              <p>
+                <ImHome
+                  style={{ marginRight: '10px' }}
+                  size={15}
+                  color="white"
+                />
+                Rinnekatu 2-4b, 70600 Kuopio
+              </p>
+              <p>
+                <GiRotaryPhone
+                  style={{ marginRight: '10px' }}
+                  size={15}
+                  color="white"
+                />
+                044 238 8271
+              </p>
+              <p>
+                <MdEmail
+                  style={{ marginRight: '10px' }}
+                  size={15}
+                  color="white"
+                />
+                info@kantoapukuopio.fi
+              </p>
+            </div>
           </div>
         </div>
       </div>

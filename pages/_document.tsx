@@ -7,7 +7,7 @@ export default function Document() {
 
       <meta
         name="description"
-        content="Kantoapu Kuopio tarjoaa laadukasta ja huolellista muuttopalvelua Kuopiosta käsin koko suomeen. Muuttojen lisäksi tarjoamme kierrätys- ja laatikoiden vuokrauspalveluita."
+        content="Kantoapu Kuopio tarjoaa nopeaa, huolellista ja laadukasta muuttopalvelua Kuopiosta käsin koko suomeen. Muuttojen lisäksi tarjoamme kierrätys-, asennus ja laatikoiden vuokrauspalveluita."
       />
       <body>
         <Main />

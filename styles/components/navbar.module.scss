@@ -13,7 +13,7 @@
   color: Variables.$mainFontColor;
 }
 .NavBarContent {
-  width: 95%;
+  width: 90%;
   margin: auto;
   height: 100%;
   display: flex;
@@ -96,6 +96,7 @@
     display: flex;
     justify-content: space-around;
     width: max(50%, 800px);
+    max-width: 90%;
     align-items: center;
     margin: auto;
     li {
@@ -139,5 +140,23 @@
     a:hover::before {
       width: 100%;
     }
+  }
+}
+@media screen and (max-width: 900px) {
+  .button {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .NavBarLinksContainer {
+    display: none;
+  }
+  .NavBarContent {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .LowerNavLinks {
+    display: none;
   }
 }

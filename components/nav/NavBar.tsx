@@ -72,6 +72,7 @@ const NavBar = () => {
                       alt="form"
                     />
                   </div>
+
                   <Link href={{ pathname: '/', hash: '#form' }}>
                     <div className={classes.NavInfoLinkContainerInfo}>
                       <div className={classes.title}>
