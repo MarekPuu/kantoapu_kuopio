@@ -49,6 +49,9 @@
   justify-content: space-between;
   padding-right: 20px;
   align-items: center;
+  button {
+    padding: 10px;
+  }
   h1 {
     margin-left: 5%;
     font-weight: 500;
@@ -111,21 +114,21 @@
 
   .hover1:hover {
     border: none;
-
+    box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.2);
     .PalveluCardTitleContainer {
       border-bottom: none;
     }
   }
   .hover2:hover {
     border: none;
-
+    box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.2);
     .PalveluCardTitleContainer {
       border-bottom: none;
     }
   }
   .hover3:hover {
     border: none;
-
+    box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.2);
     .PalveluCardTitleContainer {
       border-bottom: none;
     }
