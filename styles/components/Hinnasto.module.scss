@@ -13,70 +13,54 @@
   margin: auto;
   margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 325px);
+  grid-template-columns: repeat(auto-fill, minmax(275px, 500px));
   grid-template-rows: auto;
-  gap: 50px;
-  width: fit-content;
-}
-.HinnastoCard {
-  width: 90%;
-  min-width: 300px;
-  margin: auto;
-}
-.HinnastoCardTitleContainer {
-  h1 {
-    font-weight: 500;
-    font-size: 1.5rem;
-  }
-}
-.HinnastoItemsContainer {
-  margin-top: 10px;
-}
-.HinnastoCardItems {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  max-width: 1200px;
   width: 100%;
-  height: 70px;
-  margin-top: 15px;
-  box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
+  justify-content: center;
+  gap: 50px;
 }
+
 .hover {
   transition: all 0.2s ease-in-out;
 }
 .hover:hover {
   transform: translateY(-2px);
 }
-
-.HinnastoCardItemPrice {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  width: 20%;
+.HinnastoCardContainer {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  width: minmax(275px, 500px);
+  // padding: 5px 5px;
   h1 {
-    font-size: 1.25rem;
+    padding: 20px 10px;
+    font-size: 1.5rem;
     font-weight: 500;
-    margin-left: 10%;
+    position: relative;
+    width: fit-content;
+    &::after {
+      position: absolute;
+      content: '';
+      height: 3px;
+      background-color: black;
+      bottom: 15px;
+      left: 5px;
+      width: 75%;
+    }
   }
 }
-.HinnastoCardItemDesc {
-  clip-path: polygon(10% 0, 100% 0, 100% 54%, 100% 100%, 0 100%);
-  width: 80%;
-  height: 100%;
+.itemContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: black;
-  color: white;
-  h1 {
-    font-size: 1rem;
-    font-weight: 400;
-    margin-left: 10%;
+  justify-content: space-between;
+
+  p {
+    padding: 15px 10px;
+    font-weight: 500;
   }
 }
+.grey {
+  background: #f0eeee;
+}
+
 .HinnastoInfoContainer {
   padding-top: 100px;
   max-width: 800px;
@@ -87,5 +71,11 @@
   }
   span {
     font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .HinnastoContainer {
+    margin: 0 0;
   }
 }

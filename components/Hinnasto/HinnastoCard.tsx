@@ -1,19 +1,26 @@
 import React from 'react';
-import { IHinnasto } from '../../utils/Hinnasto';
-import HinnastoCardItem from './HinnastoCardItem';
 import classes from '../../styles/components/Hinnasto.module.scss';
 
-const HinnastoCard = ({ title, items }: IHinnasto) => {
+const HinnastoCard = ({ title, items }: any) => {
   return (
-    <div className={classes.HinnastoCard}>
-      <div className={classes.HinnastoCardTitleContainer}>
+    <div className={classes.HinnastoCardContainer}>
+      <div className="TitleContainer">
         <h1>{title}</h1>
       </div>
-      <div className={classes.HinnastoItemsContainer}>
-        {items.map((item, i) => {
-          return <HinnastoCardItem key={i} {...item} />;
-        })}
-      </div>
+      {items.map((item: any, index: number) => {
+        const { description, price } = item;
+        return (
+          <div
+            key={index}
+            className={`${classes.itemContainer} ${
+              index % 2 === 0 && classes.grey
+            }`}
+          >
+            <p>{description}</p>
+            <p>{price}</p>
+          </div>
+        );
+      })}
     </div>
   );
 };
