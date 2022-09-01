@@ -51,7 +51,10 @@
 .itemContainer {
   display: flex;
   justify-content: space-between;
-
+  cursor: pointer;
+  &:hover {
+    background: #cfabab;
+  }
   p {
     padding: 15px 10px;
     font-weight: 500;

@@ -4,7 +4,7 @@ import classes from '../../styles/components/Hinnasto.module.scss';
 const HinnastoCard = ({ title, items }: any) => {
   return (
     <div className={classes.HinnastoCardContainer}>
-      <div className="TitleContainer">
+      <div className={classes.TitleContainer}>
         <h1>{title}</h1>
       </div>
       {items.map((item: any, index: number) => {
