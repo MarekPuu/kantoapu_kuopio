@@ -1,5 +1,7 @@
 @use '../variables/Variables.scss' as variable;
-
+.mobileButtons {
+  display: none;
+}
 .palvelutContainer {
   padding: 100px 0;
   width: 100%;
@@ -23,17 +25,18 @@
   margin-top: 50px;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, 325px);
+  grid-template-columns: repeat(auto-fill, minmax(275px, 300px));
   grid-template-rows: auto;
   gap: 30px;
   max-width: 1035px;
-  width: 90%;
+  width: 100%;
 }
 .PalveluCard {
   cursor: pointer;
   background-color: white;
   height: 350px;
-  width: 325px;
+  width: 100%;
+  min-width: 275px;
   box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.2);
   border-bottom: 0px solid black;
   transition: all 0.1s linear;
@@ -43,6 +46,8 @@
   background: black;
   height: 80px;
   display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
   align-items: center;
   h1 {
     margin-left: 5%;
@@ -83,5 +88,49 @@
   border-bottom: 8px solid variable.$hoverBorderColor3;
   .PalveluCardTitleContainer {
     border-bottom: 1px solid variable.$hoverBorderColor3;
+  }
+}
+@media screen and (max-width: 700px) {
+  .PalvelutCardContainer {
+    grid-template-columns: repeat(auto-fill, minmax(275px, 400px));
+    width: 95%;
+  }
+  .PalveluCard {
+    height: fit-content;
+    overflow: hidden;
+  }
+  .PalveluCardTextContainer {
+    height: 0px;
+    transition: all 0.1s ease-in-out;
+    padding: 0;
+  }
+  .active {
+    padding: 20px 30px;
+    height: 100%;
+  }
+
+  .hover1:hover {
+    border: none;
+
+    .PalveluCardTitleContainer {
+      border-bottom: none;
+    }
+  }
+  .hover2:hover {
+    border: none;
+
+    .PalveluCardTitleContainer {
+      border-bottom: none;
+    }
+  }
+  .hover3:hover {
+    border: none;
+
+    .PalveluCardTitleContainer {
+      border-bottom: none;
+    }
+  }
+  .mobileButtons {
+    display: block;
   }
 }
