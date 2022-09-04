@@ -23,11 +23,16 @@ const VinkitContainer = () => {
             />
           </div>
           <div className={classes.VinkitMuuttajalleItemText}>
-            <h1>Pakkaa sopivasti</h1>
+            <h1>Pakkaa tavarat huolellisesti</h1>
             <p>
+              Kaikki irtain tavara kaapeista, hyllyistä, laatikoista, pöydiltä, lattioilta 
+              ym. muutettavasta tilasta tyhjennetään ja pakataan muuttolaatikoihin 
+              tai muihin vastaaviin, esim. banaani- tai pahvilaatikoihin.
+              Helposti särkyvät tavarat kannattaa suojata erityisen hyvin pehmusteilla. 
               Jätä laatikon yläreunaan tyhjää tilaa, että ne voidaan pakata
-              päällekkäin. Laita vain 4 laatikkoa päällekkäin. Lastaa
-              jäteseäkit/ pussit silleen, että jaksaisit itse nostaa niitä.
+              päällekkäin. Laita vain 4 laatikkoa päällekkäin. 
+              Pakkaa jäteseäkit/pussit siten, että jaksaisit itse nostaa niitä.
+              Sulje säkin suuaukko hyvin narulla tai teipillä, ettei se aukea muuton aikana.
               Muuton nopeuttamiseksi ja meidän työn helpottamiseksi voit
               vuokrata meiltä muuttolaatikoita.
             </p>
@@ -71,7 +76,7 @@ const VinkitContainer = () => {
             <p>
               Irrota mukaan lähtevät pesukoneet, kuivausrummut ja tiskikoneet
               ennen muuton alkamista. Teippaa letkut ja sähköjohdot kiinni
-              koneidet taakse tai päälle. Valuta letkuista vesi, jotta vesi ei
+              koneiden taakse tai päälle. Valuta letkuista vesi, jotta vesi ei
               pääse valumaan letkuista muuton tai kuljetuksen aikana lattialle.
               Irrota pesutornien lukitus ennen muutton alkamista.
             </p>
@@ -85,7 +90,7 @@ const VinkitContainer = () => {
               muuttomiehet saapuvat. Varmista että käytävillä on tarpeeksi tilaa
               kantaa isoimmat huonekalut ja että lattialla ei ole tavaraa, joka
               estäisi nokkakärryjen vetämistä. Erittele tavarat selkeästi
-              sellaisiin pinoihin jotka lähtevät mukaan uuteen asuntoon ja jotka
+              sellaisiin pinoihin jotka lähtevät mukaan uuteen asuntoon ja, jotka
               jää vanhaan asuntoon.
             </p>
           </div>
