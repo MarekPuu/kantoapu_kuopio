@@ -1,7 +1,8 @@
 import React from 'react';
+import Yrityksille from '../../components/Yrityksille/Yrityksille';
 
 const index = () => {
-  return <div>index</div>;
+  return <Yrityksille />;
 };
 
 export default index;

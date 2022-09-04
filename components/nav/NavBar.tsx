@@ -13,7 +13,10 @@ const NavBar = () => {
       <div className={classes.NavBarContainer}>
         <div className={classes.NavBarContent}>
           <Link href={'/'}>
-            <div className={classes.NavBarLogoContainer}>
+            <div
+              style={{ cursor: 'pointer' }}
+              className={classes.NavBarLogoContainer}
+            >
               <Image
                 width={128}
                 height={72}

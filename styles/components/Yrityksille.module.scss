@@ -1,13 +1,25 @@
 .Title {
   padding: 100px;
   margin-bottom: 100px;
-  background-color: #f1a054;
+  background-color: #0b6a78;
   h1 {
     width: fit-content;
     margin: auto;
     font-weight: 600;
     font-size: 2.25rem;
-    color: black;
+    color: white;
+  }
+}
+
+@media (max-width: 650px) {
+  .Title {
+    padding: 50px 0;
+    margin-bottom: 50px;
+    h1 {
+      font-size: 1.75rem;
+      white-space: nowrap;
+      margin: auto;
+    }
   }
 }
 .VinkitMuuttajalleContainer {
