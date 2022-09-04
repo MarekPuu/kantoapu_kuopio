@@ -24,13 +24,10 @@ const Yrityksille = () => {
           <div className={classes.VinkitMuuttajalleItemText}>
             <h1>Yritysmuutto</h1>
             <p>
-              Kattava palvelumme pitää sisällään muuton kaikki vaiheet
-              pakkauksesta kuljetukseen ja kalusteiden asennuksesta mappien
-              hyllytykseen takaisin paikoilleen. Lattiat suojataan niin ettei
-              tila kärsi ylimääräistä vahinkoa lattioiden naarmuuntumisella tai
-              likaantumisella. Tavarat puretaan ja pakataan turvallisesti sekä
-              kuljetetaan asianmukaisesti uuteen toimitilaan.Jätteet kuljetamme
-              kierrätykseen ja jäteasemalle.
+              Palvelumme pitää sisällään muuton kaikki vaiheet
+              pakkauksesta kuljetukseen ja kalusteiden asennukseen. Suojaamme lattiat siten että tilat välttyvät naarmuilta ja likaantumiselta.
+              Puramme ja pakkaamme tavarat turvallisesti sekä
+              kuljetetamme ne asianmukaisesti uuteen toimitilaan. Hoidamme myös jätteiden kierrätyksen.
             </p>
           </div>
         </div>
@@ -39,13 +36,7 @@ const Yrityksille = () => {
             <h1>Jakelu- ja kuljetuspalvelut</h1>
             <p>
               Kattavan kalustomme avulla pystymme hoitamaan kalusteiden
-              jakelupalvelut asiakkaan tarpeen mukaan. Yleensä jakeluyritykset
-              pystyvät toimittamaan tavarat asiakkaan osoitteeseen tai
-              lastauslaiturille, mutta tavaroiden sisäänkanto on hoidettava
-              jollain muulla tavalla. Ammattilaisemme hoitavat tavarat asiakkaan
-              osoittamaan paikkaan, jonka jälkeen asentajamme purkavat
-              pakkaukset, asentavat tuotteen käyttökuntoon ja tarvittaessa
-              antavat myös käyttöopastuksen.
+              jakelupalvelut sisäänkannolla ja paikalle asennettuna asiakkaan tarpeen mukaan.
             </p>
           </div>
           <div className={classes.VinkitMuuttajalleItemImage}>
@@ -73,11 +64,9 @@ const Yrityksille = () => {
           <div className={classes.VinkitMuuttajalleItemText}>
             <h1>Asennuspalvelut</h1>
             <p>
-              Ammattitaitoiset asentajamme hoitavat kaiken toimistokalusteiden
+              Kokeneet ja ammattitaitoiset asentajamme hoitavat kaiken toimistokalusteiden
               asennuksista, siirroista ja työstöistä sekä toimistokalusteiden
-              purkamisesta aina vaativampiin asennuksiin asti. Asentajamme
-              koulutetaan tehtäviin ja heillä on käytössään ajantasaiset
-              työvälineet
+              purkamisen.
             </p>
           </div>
         </div>
