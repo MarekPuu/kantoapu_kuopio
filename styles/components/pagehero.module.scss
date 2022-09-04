@@ -2,9 +2,8 @@
 
 .pageheroContainer {
   height: calc(100vh - 250px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('/KantoapuHero.jpg');
-  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/KantoapuHero.webp');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -49,5 +48,20 @@
     span {
       color: variable.$secondaryFontColor;
     }
+  }
+}
+@media screen and (max-width: 450px) {
+  .pageheroContainer {
+    height: calc(100vh - 120px);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url('/KantoapuHeroMobile.png');
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }

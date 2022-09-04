@@ -27,7 +27,10 @@ const MeidanTarina = () => {
         </p>
         <p>Ota yhteyttä ja suunnitellaan juuri sinulle sopiva muutto!</p>
       </div>
-      <div className={classes.MeidanTarinaImage}>
+      <div
+        style={{ width: '90%', position: 'relative' }}
+        className={classes.MeidanTarinaImage}
+      >
         <Image
           width={500}
           height={500}
