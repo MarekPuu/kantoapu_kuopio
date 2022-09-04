@@ -1,7 +1,9 @@
 @use '../variables/Variables.scss' as variable;
 .mobileButtons {
   display: none;
+  overflow-y: hidden;
 }
+
 .palvelutContainer {
   padding: 100px 0;
   width: 100%;
@@ -114,6 +116,7 @@
 
   .hover1:hover {
     border: none;
+    transform: translateY(0);
     box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.2);
     .PalveluCardTitleContainer {
       border-bottom: none;
@@ -121,12 +124,16 @@
   }
   .hover2:hover {
     border: none;
+    transform: translateY(0);
+
     box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.2);
     .PalveluCardTitleContainer {
       border-bottom: none;
     }
   }
   .hover3:hover {
+    transform: translateY(0);
+
     border: none;
     box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.2);
     .PalveluCardTitleContainer {

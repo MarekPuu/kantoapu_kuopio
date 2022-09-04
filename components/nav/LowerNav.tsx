@@ -14,6 +14,9 @@ const LowerNav = () => {
             <Link href={{ pathname: '/', hash: 'hinnasto' }}>Hinnasto</Link>
           </li>
           <li>
+            <Link href={{ pathname: '/muuttajalle' }}>Muuttajalle</Link>
+          </li>
+          <li>
             <Link href={{ pathname: '/yrityksille' }}>Yrityksille</Link>
           </li>
           <li>

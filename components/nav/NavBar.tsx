@@ -8,8 +8,6 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdClose } from 'react-icons/md';
 
 const NavBar = () => {
-  const [mobileNavOpen, setMobileNavOpen] = useState(false);
-
   return (
     <>
       <div className={classes.NavBarContainer}>
@@ -24,16 +22,6 @@ const NavBar = () => {
               />
             </div>
           </Link>
-          <button
-            onClick={() => setMobileNavOpen((b) => !b)}
-            className={classes.NavBarBurder}
-          >
-            {mobileNavOpen ? (
-              <MdClose size={50} color="white" />
-            ) : (
-              <GiHamburgerMenu size={50} color="white" />
-            )}
-          </button>
 
           <div className={classes.NavBarLinksContainer}>
             <a href="tel:+358442388271">
@@ -105,7 +93,7 @@ const NavBar = () => {
         </div>
       </div>
       <LowerNav />
-      {mobileNavOpen && <MobileNav setMobileNavOpen={setMobileNavOpen} />}
+      <MobileNav />
     </>
   );
 };
