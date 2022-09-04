@@ -14,7 +14,7 @@ const Palvelut: IPalvelut[] = [
     text: 'Kierrätämme puolestasi vanhat huonekalusi ja irtoimiston, maksat vain tuntihinnan mukaisen veloituksen ja kaatopaikkamaksun',
     icon: null,
   },
-  { title: 'Muuttolaatikoiden vuokraus', text: '', icon: null },
+  { title: 'Muuttolaatikoiden vuokraus', text: 'Meiltä saat vuorkattua helposti ja edullisesti muuttolaatikot muuttoasi varten. Hinta: 0,2€/kpl/päivä Toimitus: 10€/suunta', icon: null },
   {
     title: 'Pakkauspalvelu',
     text: 'Pakkaaminen on usein muuton aikaa vievin vaihe. Uuteen kotiin muuttamisessa on paljon muutakin huolehdittavaa, joten miksipä et säästäisi aikaa ja antaisi meidän ammattilaisten pakata kotisi irtaimiston',

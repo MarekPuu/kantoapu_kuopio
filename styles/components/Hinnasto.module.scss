@@ -53,7 +53,9 @@
   justify-content: space-between;
   cursor: pointer;
   &:hover {
-    background: #cfabab;
+    // background: #cfabab;
+    background: #0b6a78;
+    color: white;
   }
   p {
     padding: 15px 10px;

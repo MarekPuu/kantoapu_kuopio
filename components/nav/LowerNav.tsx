@@ -20,7 +20,7 @@ const LowerNav = () => {
             <Link href={{ pathname: '/yrityksille' }}>Yrityksille</Link>
           </li>
           <li>
-            <Link href={{ pathname: '/toimipisteemme' }}>Toimipisteemme</Link>
+            <Link href="https://www.kantoapujoensuu.fi/">Kantoapu Joensuu</Link>
           </li>
         </ul>
       </div>
