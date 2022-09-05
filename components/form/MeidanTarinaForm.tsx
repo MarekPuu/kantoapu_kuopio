@@ -284,7 +284,14 @@ const MeidanTarinaForm = () => {
           />
           <label htmlFor="checkbox">
             Hyväksyn kantoapu Kuopion{' '}
-            <Link href={'/sopimusehdot'}>sopimusehdot</Link>
+            <Link
+              href={{
+                pathname: '/',
+                query: { modal: 'sopimusehdot' },
+              }}
+            >
+              sopimusehdot
+            </Link>
           </label>
         </div>
         <div
