@@ -2,7 +2,7 @@ import React from 'react';
 import classes from '../../styles/components/sopimusehdotModal.module.scss';
 import Link from 'next/link';
 import { AiFillCloseSquare } from 'react-icons/ai';
-//nimi vaihtu
+
 const SopimusehdotFI = () => {
   return (
     <div className={classes.SopimusehdotContainer}>

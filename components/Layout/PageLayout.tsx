@@ -6,7 +6,7 @@ import Head from './CustomHead';
 import Footer from '../Footer/Footer';
 import Modal from 'react-modal';
 import { useRouter } from 'next/router';
-import SopimusehdotFI from '../Modal/sopimusehdotFI';
+import SopimusehdotFI from '../Modal/Sopimusehdot';
 
 Modal.setAppElement('#__next');
 
