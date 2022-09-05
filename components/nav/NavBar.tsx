@@ -1,11 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import classes from '../../styles/components/navbar.module.scss';
 import LowerNav from './LowerNav';
 import Link from 'next/link';
 import Image from 'next/image';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { MdClose } from 'react-icons/md';
-import MobileNav from './MobileNav';
 
 const NavBar = () => {
   return (
@@ -96,7 +93,6 @@ const NavBar = () => {
         </div>
       </div>
       <LowerNav />
-      <MobileNav />
     </>
   );
 };
