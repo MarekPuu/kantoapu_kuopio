@@ -1,44 +1,66 @@
-import React from 'react';
-import classes from '../../styles/components/mobilenav.module.scss';
-import Link from 'next/link';
+import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const MobileNav = () => {
+  const [checked, setChecked] = useState(false);
+  function toggle() {
+    var elm = document.getElementById('checkbox');
+    if (checked) {
+      if (!elm) return;
+      elm.click();
+      setChecked(false);
+    }
+  }
   return (
-    <div className={classes.nav}>
-      <nav role="navigation">
-        <div className={classes.menuToggle}>
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-          <ul className={classes.menu}>
-            <Link href={{ pathname: '/', hash: 'palvelut' }}>
-              <li>
-                <p>Palvelut</p>
-              </li>
-            </Link>
+    <nav id="mobileNav" role="navigation">
+      <div className="navImg">
+        <button onClick={toggle}>
+          <Link href={{ pathname: '/' }}>
+            <Image
+              width={70}
+              height={40}
+              src={'/KantoapuLogo.png'}
+              alt="Kantoapu"
+            />
+          </Link>
+        </button>
+      </div>
 
-            <Link href={{ pathname: '/', hash: 'hinnasto' }}>
-              <li>
-                <p>Hinnasto</p>
-              </li>
-            </Link>
+      <div id="menuToggle">
+        <input onClick={() => setChecked(true)} id="checkbox" type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
 
-            <Link href={{ pathname: '/yrityksille' }}>
-              <li>
-                <p>Yrityksille</p>
-              </li>
-            </Link>
-            <Link href={{ pathname: '/toimipisteemme' }}>
-              <li>
-                <p>Toimipisteemme</p>
-              </li>
-            </Link>
-          </ul>
-        </div>
-      </nav>
-    </div>
+        <ul id="menu">
+          <li>
+            <button onClick={toggle}>
+              <Link href={{ pathname: '/', hash: 'palvelut' }}>Palvelut</Link>
+            </button>
+          </li>
+
+          <li>
+            <button onClick={toggle}>
+              <Link href={{ pathname: '/', hash: 'hinnasto' }}>Hinnasto</Link>
+            </button>
+          </li>
+          <li>
+            <button onClick={toggle}>
+              <Link href={{ pathname: '/muuttajalle' }}>Muuttajalle</Link>
+            </button>
+          </li>
+          <li>
+            <button onClick={toggle}>
+              <Link href={{ pathname: '/yrityksille' }}>Yrityksille</Link>
+            </button>
+          </li>
+          <li>
+            <Link href="https://www.kantoapujoensuu.fi/">Kantoapu Joensuu</Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 };
 
