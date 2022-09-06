@@ -41,7 +41,9 @@ const PalvelutCard = ({
           activeIndex === index && classes.active
         }`}
       >
-        <p>{text}</p>
+        {text.map((t, i) => {
+          return <p key={i}>{t}</p>;
+        })}
       </div>
     </div>
   );
