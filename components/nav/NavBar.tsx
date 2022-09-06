@@ -3,11 +3,12 @@ import classes from '../../styles/components/navbar.module.scss';
 import LowerNav from './LowerNav';
 import Link from 'next/link';
 import Image from 'next/image';
+import MobileNav from './MobileNav';
 
 const NavBar = () => {
   return (
     <>
-      <div className={classes.NavBarContainer}>
+      <nav className={classes.NavBarContainer}>
         <div className={classes.NavBarContent}>
           <Link href={'/'}>
             <div
@@ -91,8 +92,9 @@ const NavBar = () => {
             </div>
           </div>
         </div>
-      </div>
+      </nav>
       <LowerNav />
+      <MobileNav />
     </>
   );
 };
