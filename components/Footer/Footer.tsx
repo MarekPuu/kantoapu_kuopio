@@ -105,7 +105,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className={classes.FooterContanct}>
+          <div id="yhteystiedot" className={classes.FooterContanct}>
             <div>
               <h1>Yhteystiedot</h1>
               <p>

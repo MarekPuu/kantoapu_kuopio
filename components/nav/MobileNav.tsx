@@ -1,61 +1,63 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import classes from '../../styles/components/mobilenav.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const MobileNav = () => {
-  const [checked, setChecked] = useState(false);
-  function toggle() {
-    var elm = document.getElementById('checkbox');
-    if (checked) {
-      if (!elm) return;
-      elm.click();
-      setChecked(false);
-    }
-  }
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav id="mobileNav" role="navigation">
-      <div className="navImg">
-        <button onClick={toggle}>
-          <Link href={{ pathname: '/' }}>
+    <nav className={classes.MobileNavContainer}>
+      <div className={classes.MobileNavcontent}>
+        <Link href={'/'}>
+          <div
+            onClick={() => setIsOpen(false)}
+            className={classes.MobileNavLogo}
+          >
             <Image
-              width={70}
-              height={40}
+              width={128}
+              height={72}
               src={'/KantoapuLogo.png'}
               alt="Kantoapu"
+              layout="responsive"
+              objectFit="contain"
             />
-          </Link>
-        </button>
+          </div>
+        </Link>
+
+        <div
+          onClick={() => setIsOpen((b) => !b)}
+          className={`${classes.Menu_btn} ${isOpen && classes.open}`}
+        >
+          <div className={`${classes.Menu_btn_burger}`}></div>
+        </div>
       </div>
 
-      <div id="menuToggle">
-        <input onClick={() => setChecked(true)} id="checkbox" type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-
-        <ul id="menu">
-          <li>
-            <button onClick={toggle}>
-              <Link href={{ pathname: '/', hash: 'palvelut' }}>Palvelut</Link>
-            </button>
+      <div
+        id="fixedNav"
+        className={`${classes.MobileMenuContainer}  ${
+          isOpen && classes.MobileMenuContainerActive
+        }`}
+      >
+        <ul>
+          <li onClick={() => setIsOpen(false)}>
+            <Link href={{ pathname: '/', hash: 'palvelut' }}>Palvelut</Link>
           </li>
-
-          <li>
-            <button onClick={toggle}>
-              <Link href={{ pathname: '/', hash: 'hinnasto' }}>Hinnasto</Link>
-            </button>
+          <li onClick={() => setIsOpen(false)}>
+            <Link href={{ pathname: '/', hash: 'hinnasto' }}>Hinnasto</Link>
           </li>
-          <li>
-            <button onClick={toggle}>
-              <Link href={{ pathname: '/muuttajalle' }}>Muuttajalle</Link>
-            </button>
+          <li onClick={() => setIsOpen(false)}>
+            <Link href={{ pathname: '/muuttajalle' }}>Muuttajalle</Link>
           </li>
-          <li>
-            <button onClick={toggle}>
-              <Link href={{ pathname: '/yrityksille' }}>Yrityksille</Link>
-            </button>
+          <li onClick={() => setIsOpen(false)}>
+            <Link href={{ pathname: '/yrityksille' }}>Yrityksille</Link>
           </li>
-          <li>
+          <li onClick={() => setIsOpen(false)}>
+            <Link href={{ pathname: '/', hash: 'yhteystiedot' }}>
+              Yhteystiedot
+            </Link>
+          </li>
+          <li onClick={() => setIsOpen(false)}>
             <Link href="https://www.kantoapujoensuu.fi/">Kantoapu Joensuu</Link>
           </li>
         </ul>

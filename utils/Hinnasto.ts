@@ -3,7 +3,7 @@ const Hinnasto: IHinnasto[] = [
     title: 'Kuorma-auto 52m³',
     items: [
       { price: '85€/h', description: '1 muuttomiehellä' },
-      { price: '120€/h', description: '2 muuttomiehellä' },
+      { price: '115€/h', description: '2 muuttomiehellä' },
       { price: '40€/h', description: 'Lisämies muutolle' },
     ],
   },

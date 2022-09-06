@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Input from '../reusableComponents/Input';
 import classes from '../../styles/components/MeidanTarinaForm.module.scss';
 import Link from 'next/link';
@@ -152,11 +152,11 @@ const MeidanTarinaForm = () => {
         <div className={classes.formInfo}>
           <p>Tiedot</p>
         </div>
-        <div className={classes.input_90}>
-          <div className={classes.input_60}>
+        <div className={classes.input_90_wrap}>
+          <div className={classes.input_60_grow}>
             <Input label="Nimi" onChange={setNimi} value={nimi} type="text" />
           </div>
-          <div className={classes.input_45}>
+          <div className={classes.input_45_grow}>
             <Input
               label="Puhelinnumero"
               onChange={setPuhelin}
