@@ -1,0 +1,109 @@
+.formContainer {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: -20%;
+  box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.TitleContainer {
+  text-align: center;
+}
+.input_90 {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.input_90_wrap {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.input_45 {
+  width: 45%;
+}
+.input_45_grow {
+  width: 45%;
+}
+.input_60 {
+  width: 54%;
+}
+.input_60_grow {
+  width: 54%;
+}
+
+.formInfo {
+  margin: 20px 0;
+  p {
+    margin: 0 10px !important;
+    padding-bottom: 0;
+    width: 90%;
+    margin: auto;
+    font-weight: 600;
+  }
+}
+.checkboxContainer {
+  display: block;
+  padding-left: 3px;
+  margin-top: 10px;
+
+  :not(:first-child) {
+    margin-left: 10px;
+  }
+  a {
+    color: blue;
+  }
+}
+
+.button {
+  button {
+    color: white;
+    background: black;
+    width: 100%;
+    padding: 15px 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+}
+
+.errorBorder {
+  border: 2px solid red;
+}
+.recaptcha {
+  margin-left: 5%;
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.error {
+  width: fit-content;
+  color: red;
+  padding-bottom: 10px;
+}
+.loadingOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 450px) {
+  .input_90_wrap {
+    flex-wrap: wrap;
+  }
+  .input_45_grow {
+    width: 100%;
+  }
+  .input_60_grow {
+    width: 100%;
+  }
+}

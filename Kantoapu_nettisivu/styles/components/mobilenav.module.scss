@@ -1,0 +1,88 @@
+.MobileNavContainer {
+  height: 80px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.MobileNavcontent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  height: 100%;
+}
+.MobileNavLogo {
+  position: relative;
+  width: 110px;
+}
+.Menu_btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  // border: 3px solid white;
+}
+.Menu_btn_burger {
+  width: 40px;
+  height: 3px;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+  background-color: white;
+}
+.Menu_btn_burger::after,
+.Menu_btn_burger::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+.Menu_btn_burger::before {
+  transform: translateY(-10px);
+}
+.Menu_btn_burger::after {
+  transform: translateY(10px);
+}
+.Menu_btn.open .Menu_btn_burger {
+  background: transparent;
+  box-shadow: none;
+}
+.Menu_btn.open .Menu_btn_burger::before {
+  transform: rotate(45deg);
+}
+.Menu_btn.open .Menu_btn_burger::after {
+  transform: rotate(-45deg);
+}
+.MobileMenuContainer {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  transform: translateX(-100%);
+  transition: all 0.5s ease-in-out;
+  padding-top: 30px;
+  li {
+    padding: 20px;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+}
+.MobileMenuContainerActive {
+  transition: all 0.5 ease-in-out;
+  transform: translateX(0);
+}
+
+@media screen and (min-width: 601px) {
+  .MobileNavContainer {
+    display: none;
+  }
+}

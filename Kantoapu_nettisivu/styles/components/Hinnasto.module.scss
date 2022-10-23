@@ -1,0 +1,86 @@
+.HinnastoContainer {
+  width: 100%;
+  margin: 100px 0;
+}
+.HinnastoContainerTitle {
+  text-align: center;
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+.HinnastoCardsContainer {
+  margin: auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 500px));
+  grid-template-rows: auto;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
+  gap: 50px;
+}
+
+.hover {
+  transition: all 0.2s ease-in-out;
+}
+.hover:hover {
+  transform: translateY(-2px);
+}
+.HinnastoCardContainer {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  width: minmax(275px, 500px);
+  // padding: 5px 5px;
+  h1 {
+    padding: 20px 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    width: fit-content;
+    &::after {
+      position: absolute;
+      content: '';
+      height: 3px;
+      background-color: black;
+      bottom: 15px;
+      left: 5px;
+      width: 75%;
+    }
+  }
+}
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  &:hover {
+    // background: #cfabab;
+    background: #0b6a78;
+    color: white;
+  }
+  p {
+    padding: 15px 10px;
+    font-weight: 500;
+  }
+}
+.grey {
+  background: #f0eeee;
+}
+
+.HinnastoInfoContainer {
+  padding-top: 100px;
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+  p {
+    margin-top: 30px;
+  }
+  span {
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .HinnastoContainer {
+    margin: 0 0;
+  }
+}
